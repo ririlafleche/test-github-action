@@ -1,4 +1,5 @@
-def miller_rabin_test(n, base):
+import random
+def miller_rabin_base(n, base):
     if n < 2:
         return False
     if n in (2, 3):
@@ -21,3 +22,10 @@ def miller_rabin_test(n, base):
             return True
     
     return False
+
+def miller_rabin_test(n, t):
+    for i in range(t):
+        base = random.randint(0, n-2)
+        if miller_rabin_base(n,base) == False: 
+            return False
+    return True 
