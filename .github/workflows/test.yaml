@@ -25,4 +25,4 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: 🧪 Lancer les tests
-        run: run: python3 -m unittest test_code.py
+        run: python3 -m unittest test_code.py
