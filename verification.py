@@ -25,7 +25,7 @@ def miller_rabin_base(n, base):
 
 def miller_rabin_test(n, t):
     for i in range(t):
-        base = random.randint(0, n-2)
+        base = random.randint(2, n-2)
         if miller_rabin_base(n,base) == False: 
             return False
-    return True 
+    return True
