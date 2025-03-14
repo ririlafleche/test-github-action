@@ -24,8 +24,16 @@ def miller_rabin_base(n, base):
     return False
 
 def miller_rabin_test(n, t):
-    for i in range(t):
-        base = random.randint(2, n-2)
-        if miller_rabin_base(n,base) == False: 
+    if n < 2:
+        return False
+    if n in (2, 3):
+        return True  # 2 et 3 sont premiers
+
+    for _ in range(t):
+        if n <= 3:  # Évite que `n-2` soit < 2
+            return True
+
+        base = random.randint(2, n-2)  # On choisit une base valide
+        if not miller_rabin_base(n, base):  
             return False
     return True
