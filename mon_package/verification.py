@@ -38,4 +38,5 @@ def miller_rabin_test(n, t):
             return False
     return True
 
-# test
+def miller_rabin_fake(n, t):
+    return True
