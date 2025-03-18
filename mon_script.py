@@ -1,4 +1,4 @@
-from mon_package.verification import miller_rabin_test
+from cyriac_benousaad_miller_rabin.verification import miller_rabin_test
 lst_prime = []
 compteur = 0
 while compteur < 50:

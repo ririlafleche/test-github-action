@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "cyriac_ben-miller-rabin"
+name = "cyriac_benousaad_miller_rabin"
 version = "1.0.0"
 description = "Test de miller-rabin"
 authors = ["Cyriac Benousaad"]

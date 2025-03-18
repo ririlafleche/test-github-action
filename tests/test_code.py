@@ -1,4 +1,4 @@
-import mon_package.verification as verification
+import cyriac_benousaad_miller_rabin.verification as verification
 import unittest
 
 class TestMonModule(unittest.TestCase):
