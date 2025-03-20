@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "cyriac_benousaad_miller_rabin"
-version = "1.0.1"
+name = "miller_rabin_cyriac_benousaad"
+version = "1.0.2"
 description = "Test de miller-rabin"
 authors = ["Cyriac Benousaad"]
 license = "MIT"

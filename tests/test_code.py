@@ -1,4 +1,4 @@
-import cyriac_benousaad_miller_rabin.verification as verification
+import miller_rabin_cyriac_benousaad.verification as verification
 import unittest
 
 class TestMonModule(unittest.TestCase):
