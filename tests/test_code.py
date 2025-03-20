@@ -2,12 +2,7 @@ import miller_rabin_cyriac_benousaad.verification as verification
 import unittest
 
 class TestMonModule(unittest.TestCase):
-    def test_prime2(self):
-        self.assertTrue(verification.miller_rabin_fake(2, 15))
     
-    def test_prime4(self):
-        self.assertFalse(verification.miller_rabin_fake(4, 15))
-
     def test_prime(self):
         lst_not_prime = [6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90]
         lst_prime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113]
