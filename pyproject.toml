@@ -4,7 +4,7 @@ version = "1.0.5"
 description = "Test de miller-rabin"
 authors = ["Cyriac Benousaad"]
 license = "MIT"
-
+readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 
