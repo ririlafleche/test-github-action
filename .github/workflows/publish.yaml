@@ -27,7 +27,10 @@ jobs:
 
       - name: Install dependencies
         run: poetry install --no-root
-
+      
+      - name: Configure Poetry for Trusted Publishing
+        run: poetry config repositories.pypi https://upload.pypi.org/legacy/
+      
       - name: Build and publish
         run: poetry publish --build 
 
