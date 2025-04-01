@@ -37,3 +37,6 @@ def miller_rabin_test(n, t):
         if not miller_rabin_base(n, base):  
             return False
     return True
+
+def dire_bonjour():
+    print("bonjour")
