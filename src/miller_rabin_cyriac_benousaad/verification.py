@@ -39,4 +39,4 @@ def miller_rabin_test(n, t):
     return True
 
 def dire_bonjour():
-    print("bonjour")
+    print("bonjour2")
