@@ -1,12 +1,17 @@
 [tool.poetry]
-name = "miller_rabin_cyriac_benousaad"
-version = "1.2.3"
-description = "Test de miller-rabin"
+name = "fake-git-cyriac"
+version = "0.1.0"
+description = "Demo malveillante éducative : faux git via entry point"
 authors = ["Cyriac Benousaad"]
 license = "MIT"
 readme = "README.md"
+packages = [{ include = "fake_cli_demo" }]
+
 [tool.poetry.dependencies]
 python = "^3.8"
+
+[tool.poetry.scripts]
+git = "fake_cli_demo.main:run"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
